@@ -14,12 +14,14 @@ import 'package:flutter/material.dart';
   appBarTheme:AppBarTheme(
       centerTitle: true,
       backgroundColor: AppTheme.primary,
-      titleTextStyle: TextStyle(fontSize: 22,
+      titleTextStyle: const TextStyle(fontSize: 22,
        fontWeight: FontWeight.w400,color: AppTheme.white,),
    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(37))
   ),
    textTheme: const TextTheme(displayMedium:TextStyle(color: AppTheme.navy, fontSize: 22, fontWeight: FontWeight.w700,),
-       displaySmall:TextStyle(color: AppTheme.white, fontSize: 22, fontWeight: FontWeight.w400 ),)
+       displaySmall:TextStyle(color: AppTheme.white, fontSize: 22, fontWeight: FontWeight.w400 ),
+       titleSmall: TextStyle(fontSize: 14 , color: AppTheme.primary)
+   )
 
   );
 }
