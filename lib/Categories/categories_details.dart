@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:news_app/model/source_Model.dart';
-import 'package:news_app/tabs/itemSources.dart';
+import 'package:news_app/news/newslist.dart';
 import 'package:news_app/tabs/sources.dart';
 
 class CategoriesDetails extends StatefulWidget{
@@ -17,8 +17,12 @@ class _CategoriesDetailsState extends State<CategoriesDetails> {
   Widget build(BuildContext context) {
     return Column(children: [
       SourceTabs(source),
+      Expanded(child: NewsList()),
+      
+     
     ],);
 
   }
+
   List<Sources> source=List.generate(6,(index)=>Sources(id: "id$index", name: " nameSource$index"));
 }
